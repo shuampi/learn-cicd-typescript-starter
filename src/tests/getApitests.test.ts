@@ -8,7 +8,7 @@ const person = {
 };
 
 const mockedHttpHeader: IncomingHttpHeaders = {
-  authorization: "ApiKey authorizationesss",
+  authorization: "ApiKey authorization",
 };
 const mockedHttpHeaderNull: IncomingHttpHeaders = {
   authorization: " authorization",
