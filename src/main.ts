@@ -32,10 +32,7 @@ app.use(
 app.use("/", express.static(path.join(__dirname, config.api.filepathRoot)));
 
 const v1Router = express.Router();
-function unused() {
-  // this function does nothing
-  // and is called nowhere
-}
+
 if (db) {
   v1Router.post("/users", handlerUsersCreate);
   v1Router.get("/users", middlewareAuth(handlerUsersGet));
